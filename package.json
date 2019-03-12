@@ -1,0 +1,25 @@
+{
+    "name": "coo-vscode",
+    "displayName": "coo-vscode",
+    "description": "coo pragramming language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "",
+            "aliases": ["coo", ""],
+            "extensions": ["coo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "",
+            "scopeName": "source.coo",
+            "path": "./syntaxes/.tmLanguage.json"
+        }]
+    }
+}
