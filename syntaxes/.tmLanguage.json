@@ -3,27 +3,118 @@
 	"name": "coo",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
+			"include": "#multiple-line-comment"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#boolean"
+		},
+		{
+			"include": "#type"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#boundary"
+		},
+		{
+			"include": "#identifier"
 		}
 	],
 	"repository": {
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "//.*\n"
+				}
+			]
+		},
+		"multiple-line-comment": {
+			"name": "constant.character.escape",
+			"begin": "/\\*",
+			"end": "\\*/",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "invalid.deprecated",
+				"match": "\\b(var|def|if|else|for|ret)\\b"
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.",
+			"name": "string.quoted.double",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.",
+					"name": "constant.character.escape",
 					"match": "\\\\."
+				}
+			]
+		},
+		"number": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "[0-9]+[f|F|l|L]?"
+				}
+			]
+		},
+		"boolean": {
+			"patterns": [
+				{
+					"name": "constant.language",
+					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"type": {
+			"patterns": [
+				{
+					"name": "entity.name.type",
+					"match": "\\b(int|long|float|bool|string)\\b"
+				}
+			]
+		},
+		"operator": {
+			"patterns": [
+				{
+					"name": "markup.deleted",
+					"match": "[-+*/><=!:;,\\.]"
+				}
+			]
+		},
+		"boundary": {
+			"patterns": [
+				{
+					"name": "markup.inline.raw",
+					"match": "[\\[\\]{}\\(\\)]"
+				}
+			]
+		},
+		"identifier": {
+			"patterns": [
+				{
+					"name": "markup.underline",
+					"match": "[a-zA-Z_][a-zA-Z0-9_]*"
 				}
 			]
 		}

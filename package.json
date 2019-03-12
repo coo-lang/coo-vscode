@@ -11,13 +11,13 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "",
-            "aliases": ["coo", ""],
+            "id": "coo",
+            "aliases": ["coo", "coo"],
             "extensions": ["coo"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "",
+            "language": "coo",
             "scopeName": "source.coo",
             "path": "./syntaxes/.tmLanguage.json"
         }]
