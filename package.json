@@ -3,6 +3,11 @@
     "displayName": "coo-vscode",
     "description": "coo pragramming language support",
     "version": "0.0.1",
+    "publisher": "pwxcoo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coo-lang/coo-vscode"
+    },
     "engines": {
         "vscode": "^1.32.0"
     },
