@@ -2,7 +2,7 @@
     "name": "coo-vscode",
     "displayName": "coo-vscode",
     "description": "coo pragramming language support",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "pwxcoo",
     "repository": {
         "type": "git",

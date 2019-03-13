@@ -90,7 +90,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.type",
-					"match": "\\b(int|long|float|bool|string)\\b"
+					"match": "\\b(int|long|float|bool|string|void)\\b"
 				}
 			]
 		},
