@@ -22,8 +22,4 @@ coo-vscode is a vscode extension for supporting [coo-lang](https://github.com/co
 
 **No issus currently**
 
-## Release Notes
-
-### 0.0.1
-
 - support syntax highlight for coo-lang.

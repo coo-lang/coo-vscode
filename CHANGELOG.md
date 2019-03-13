@@ -3,5 +3,16 @@ All notable changes to the "coo-vscode" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
-- Initial release
+## Release Notes
+
+### 0.0.3
+
+fix indentation bug
+
+### 0.0.2
+
+README screenshot
+
+### 0.0.1
+
+syntax highlight support
