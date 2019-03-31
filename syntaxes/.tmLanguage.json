@@ -56,7 +56,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "invalid.deprecated",
-				"match": "\\b(var|def|if|else|for|ret)\\b"
+				"match": "\\b(var|def|if|else|for|ret|lazy)\\b"
 			}]
 		},
 		"strings": {

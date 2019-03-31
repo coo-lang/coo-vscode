@@ -5,6 +5,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## Release Notes
 
+### 0.0.5
+
+support lazy keyword
+
 ### 0.0.3
 
 fix indentation bug
